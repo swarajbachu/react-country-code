@@ -1,6 +1,6 @@
 {
   "name": "@whizzy/react-country-code",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "gives you list of country code for your react project",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -8,7 +8,9 @@
   "scripts": {
     "build": "tsup index.ts --format cjs,esm --dts --minify",
     "lint": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"no tests for now \"",
+    "ci": "pnpm run lint && pnpm run test && pnpm run build ",
+    "release": "pnpm run ci && changeset version"
   },
   "keywords": [],
   "author": "",

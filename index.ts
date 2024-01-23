@@ -1,10 +1,10 @@
-import { useMemo } from 'react'
-import defaultCountries from './src/countries'
+import { useState } from "react";
+import defaultCountries from "./src/countries";
+
+export type typeCountries = (typeof defaultCountries);
 
 export const useCountries = () => {
-  let [countries, setCountries] = useMemo(() => {
-    return defaultCountries
-  },[])
+  const countries:typeCountries = (defaultCountries);
 
-  return { countries, setCountries }
-}
+  return { countries };
+};
