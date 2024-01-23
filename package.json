@@ -1,6 +1,6 @@
 {
   "name": "@whizzy/react-country-code",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "gives you list of country code for your react project",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -10,7 +10,7 @@
     "lint": "tsc",
     "test": "echo \"no tests for now \"",
     "ci": "pnpm run lint && pnpm run test && pnpm run build ",
-    "release": "pnpm run ci && changeset version"
+    "release": "pnpm run ci && changeset publish  --access public"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +24,5 @@
     "typescript": "^5.3.3",
     "react": "18.2.0",
     "react-dom": "18.2.0"
-
   }
 }
