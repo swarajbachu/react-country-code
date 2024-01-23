@@ -1,0 +1,27 @@
+{
+  "name": "@whizzy/react-country-code",
+  "version": "1.0.0",
+  "description": "gives you list of country code for your react project",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.mjs",
+  "scripts": {
+    "build": "tsup index.ts --format cjs,esm --dts --minify",
+    "lint": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1",
+    "@tsconfig/recommended": "^1.0.3",
+    "@types/react": "^18.2.33",
+    "@types/react-dom": "^18.2.14",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+
+  }
+}
